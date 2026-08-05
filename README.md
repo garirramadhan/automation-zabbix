@@ -1,28 +1,53 @@
-# Automation Zabbix Monitoring Bot
+# Zabbix Monitoring Automation Bot
 
-Project otomatisasi untuk monitoring Zabbix dan integrasi notifikasi.
+An automation project for Zabbix monitoring and notification integration.
 
-## 📁 Struktur File Utama
-* `Mon_Zabbix.py` - Script utama untuk monitoring Zabbix.
-* `wa_server.js` - Server Node.js untuk handling pesan/notifikasi WhatsApp.
-* `run_all.bat` - File batch untuk menjalankan seluruh service secara otomatis sekaligus.
+## 📁 Main File Structure
+* `Mon_Zabbix.py` - Main script for Zabbix monitoring.
+* `wa_server.js` - A Node.js server for handling WhatsApp messages and notifications.
+* `run_all.bat` - A batch file to automatically run all services at once.
 
-## ⚙️ Cara Instalasi & Menjalankan
+## ⚙️ Installation & Execution
 
-1. **Clone repository ini ke komputer lokal:**
+1. **Clone this repository to your local computer:**
    ```bash
    git clone [https://github.com/gariramadhan/automation-zabbix.git](https://github.com/gariramadhan/automation-zabbix.git)
    cd automation-zabbix
-  
-Install dependencies yang dibutuhkan:
-Pastikan Python dan Node.js sudah terinstal di komputer.
-Install modul Python yang diperlukan (jika ada).
-Install package Node.js:
-npm install
 
-Menjalankan Program:
-Cukup klik dua kali pada file run_all.bat, atau jalankan melalui terminal:
-run_all.bat
+2. Configure the Environment (.env)
+Create a file named .env inside this project folder, then customize its contents using the following format:
+Running the Program:
+# Zabbix Configuration
+ZABBIX_URL=https://your-zabbix-server-url/api_jsonrpc.php
+ZABBIX_USER=your_username
+ZABBIX_PASSWORD=your_password
+
+# Other Configurations (if any)
+PORT=3000
+
+3. Install Python Dependencies
+Make sure Python is already installed, then install the required libraries by running this command in the terminal:
+
+- pip install requests zabbix-utils python-dotenv
+(Adjust the list of libraries above if your project uses other additional modules).
+
+4. Install Node.js Dependencies & Chromium
+This project requires Node.js for the WhatsApp server. Run this command inside the project folder:
+- npm install
+(Also make sure Chromium / Google Chrome is installed on your computer for browser automation needs, if required).
+
+
+### 5. Install Playwright & Browser Binaries
+Jika script Anda memerlukan Playwright, jalankan:
+```bash
+- pip install playwright
+- playwright install
+
+🚀 Menjalankan Program
+Setelah semua konfigurasi dan dependensi terpasang, Anda bisa langsung menjalankan seluruh program dengan cara:
+
+- run_all.bat
+
 
 
    
