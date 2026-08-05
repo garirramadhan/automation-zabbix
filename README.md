@@ -18,9 +18,9 @@ An automation project for Zabbix monitoring and notification integration.
 Create a file named .env inside this project folder, then customize its contents using the following format:
 Running the Program:
 # Zabbix Configuration
-ZABBIX_URL=https://your-zabbix-server-url/api_jsonrpc.php
-ZABBIX_USER=your_username
-ZABBIX_PASSWORD=your_password
+-ZABBIX_URL=https://your-zabbix-server-url/api_jsonrpc.php
+-ZABBIX_USER=your_username
+-ZABBIX_PASSWORD=your_password
 
 # Other Configurations (if any)
 PORT=3000
