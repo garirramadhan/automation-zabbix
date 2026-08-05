@@ -18,9 +18,9 @@ An automation project for Zabbix monitoring and notification integration.
 Create a file named .env inside this project folder, then customize its contents using the following format:
 Running the Program:
 # Zabbix Configuration
--ZABBIX_URL=https://your-zabbix-server-url/api_jsonrpc.php
--ZABBIX_USER=your_username
--ZABBIX_PASSWORD=your_password
+ZABBIX_URL=https://your-zabbix-server-url/api_jsonrpc.php
+ZABBIX_USER=your_username
+ZABBIX_PASSWORD=your_password
 
 # Other Configurations (if any)
 PORT=3000
@@ -38,13 +38,13 @@ This project requires Node.js for the WhatsApp server. Run this command inside t
 
 
 ### 5. Install Playwright & Browser Binaries
-Jika script Anda memerlukan Playwright, jalankan:
+If your script requires Playwright, run:
 ```bash
 - pip install playwright
 - playwright install
 
-🚀 Menjalankan Program
-Setelah semua konfigurasi dan dependensi terpasang, Anda bisa langsung menjalankan seluruh program dengan cara:
+🚀 Running the Program
+Once all configurations and dependencies are installed, you can run the entire program by:
 
 - run_all.bat
 
